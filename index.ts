@@ -122,6 +122,7 @@ export const outputArray: IElement[] = [
 
 export const solutionFunction1 = (inputArray: IElement[]) => {
 
+	console.time('Solving with Solution Function 1');
 	const resultArray: IElement[] = [];
 
 	inputArray.forEach((inputElement) => {
@@ -141,6 +142,7 @@ export const solutionFunction1 = (inputArray: IElement[]) => {
 		resultArray.push(inputElement);
 
 	})
+	console.timeEnd('Solving with Solution Function 1')
 	return resultArray;
 
 }
